@@ -21,4 +21,4 @@ jobs:
       run: |
         docker stop simple-html || true
         docker rm simple-html || true
-        docker run -d --name simple-html -p 80:80 ${{ secrets.DOCKER_USERNAME }}/simple-html:latest
+        docker run -d --name simple-html -p 700:80 ${{ secrets.DOCKER_USERNAME }}/simple-html:latest
